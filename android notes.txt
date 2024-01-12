@@ -1,0 +1,45 @@
+hello_world2TextView.setSingleLine():
+==================================
+ used to arrange the large text in asingle line
+EX:
+hello_world2TextView.text = "this is a dummy text about dummy written by dummy.this is a dummy text about dummy written by dummy." 
+            hello_world2TextView.setSingleLine()
+            hello_world2TextView.ellipsize= TextUtils.TruncateAt.MARQUEE // used t make slide
+            hello_world2TextView.marqueeRepeatLimit = -1  // repeating times
+            hello_world2TextView.isSelected = true        // responsible for slide
+
+
+<Button></Button>
+=================
+Button Perform an activity : setOnclickListener
+EX:
+Button.setOnClickListener(View.OnClickListener {
+		//Expression
+            //tvResult.text = edtText.text
+        })
+
+<EditText>
+==========
+EditText has an activity:addTextChangedListener(object: TextWatcher{})
+
+EX:
+edtText.addTextChangedListener(object : TextWatcher{  // getting error on object: just press the alt+enter and select all override fun to avoid error
+	// expression
+})
+
+
+
+Retrofit(api)
+==========
+
+search json placeholder api
+open first
+select your Routes among GET PUT POST
+
+search Retrofit square
+select first
+copy Gson dependency(like com..)
+copy implementation dependency(like implementation)
+paste in gradle.app
+
+also need to add CompileOptions{} in android body
